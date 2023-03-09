@@ -1,0 +1,54 @@
+/* UNIVERSAL SELECTORS */
+body {
+  color: #fff;
+  background-color: #060d39;
+  margin: 0;
+  padding: 0;
+}
+
+nav a,
+h1,
+h2,
+header label {
+  color: #fcb221;
+}
+
+/* HEADER  */
+header {
+  background-color: #0e346d;
+  font-size: 2rem;
+}
+
+/* nav,
+#menu-checkbox {
+  display: none;
+} */
+
+nav {
+  display: none;
+}
+
+nav:focus-within {
+  display: block;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+  margin-left: 10px;
+  font-size: 2rem;
+}
+/* Hamburger Menu mobile */
+header label {
+  display: inline-block;
+  padding: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+#menu-checkbox:checked ~ nav {
+  display: block;
+
+  background-color: #3f52c2;
+}
